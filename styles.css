@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    color: #4a90e2;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.day {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-bg {
+    background-color: #e6f7ff; /* Light blue */
+}
+
+.exercise {
+    margin: 10px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-box {
+    background-color: #f9f9f9; /* Light grey */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4a90e2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.day.dark {
+    background-color: #333;
+}
+
+.details.dark {
+    color: #bbb;
+}
+
+.detail-box.dark {
+    background-color: #444;
+    border: 1px solid #666;
+}
+.exercise:hover {
+    transform: scale(1.05);
+    background-color: #e0f7fa;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.page {
+    display: none;
+}
+
+#home-section {
+    display: block;
+}

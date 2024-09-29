@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your weekly workout plan with this interactive workout tracker.">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    
+
+    <!-- Log Page Section -->
+    <section id="log-section" class="page">
+        <h1>Workout Logs</h1>
+        <ul id="log-list"></ul>
+    </section>
+    <header>
+        <div class="toggle-container">
+            <label class="switch" aria-label="Toggle Dark Mode">
+                <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label">Dark Mode</span>
+        </div>
+        <h1 class="title">Workout Tracker</h1>
+    </header>
+
+    <main>
+        <section id="workout-plan">
+            <h2 class="subtitle">Weekly Workout Plan</h2>
+
+            <!-- Workout Day Sections -->
+            <article id="day1" class="day light-bg" aria-labelledby="day1-title">
+                <h3 id="day1-title">Day 1: Chest and Triceps</h3>
+                <ul>
+                    <li>
+                        <strong>Barbell Bench Press</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 6-8</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Incline Dumbbell Press</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Cable Chest Fly</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Triceps Dips</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Triceps Pushdown</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="day2" class="day light-bg" aria-labelledby="day2-title">
+                <h3 id="day2-title">Day 2: Back and Biceps</h3>
+                <ul>
+                    <li>
+                        <strong>Deadlifts</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 5-6</span>
+                            <span class="detail-box">Rest: 120-180 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Pull-ups</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 6-8</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Barbell Row</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Barbell Curl</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Hammer Curl</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="day3" class="day light-bg" aria-labelledby="day3-title">
+                <h3 id="day3-title">Day 3: Shoulders</h3>
+                <ul>
+                    <li>
+                        <strong>Overhead Press</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 6-8</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Lateral Raises</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Face Pulls</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Front Raises</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Arnold Press</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="day4" class="day light-bg" aria-labelledby="day4-title">
+                <h3 id="day4-title">Day 4: Triceps</h3>
+                <ul>
+                    <li>
+                        <strong>Close-Grip Bench Press</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 6-8</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Skull Crushers</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Overhead Triceps Extension</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Diamond Push-ups</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="day5" class="day light-bg" aria-labelledby="day5-title">
+                <h3 id="day5-title">Day 5: Biceps</h3>
+                <ul>
+                    <li>
+                        <strong>Concentration Curl</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>EZ Bar Curl</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Cable Curl</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Preacher Curl</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="day6" class="day light-bg" aria-labelledby="day6-title">
+                <h3 id="day6-title">Day 6: Legs, Glutes, and Hamstrings</h3>
+                <ul>
+                    <li>
+                        <strong>Squats</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 6-8</span>
+                            <span class="detail-box">Rest: 120 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Romanian Deadlift</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 4</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 120 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Bulgarian Split Squat</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 8-10</span>
+                            <span class="detail-box">Rest: 90 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Leg Curls</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Glute Bridge</strong>
+                        <div class="details">
+                            <span class="detail-box">Sets: 3</span>
+                            <span class="detail-box">Reps: 10-12</span>
+                            <span class="detail-box">Rest: 60 seconds</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="exercise-log">
+            <h2 class="subtitle">Custom Exercise Log</h2>
+            <form id="exercise-form" aria-label="Log Custom Exercise">
+                <label for="exercise">Exercise:</label>
+                <input type="text" id="exercise" name="exercise" required>
+                
+                <label for="sets">Sets:</label>
+                <input type="number" id="sets" name="sets" required>
+
+                <label for="reps">Reps:</label>
+                <input type="number" id="reps" name="reps" required>
+
+                <label for="weight">Weight (lbs):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <button type="submit">Log Exercise</button>
+            </form>
+
+            <ul id="log-list" aria-live="polite">
+                <!-- Logged exercises will appear here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Workout Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
